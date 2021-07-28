@@ -10,4 +10,6 @@ import java.util.List;
 public interface CompanyRepo extends JpaRepository<Company,Integer> {
     public List<Company> findAll();
     public void deleteCompanyById(int id);
+    Company findCompanyByName(String name);
+    Company findCompanyById(int id);
 }
